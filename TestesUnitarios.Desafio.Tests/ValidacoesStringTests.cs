@@ -31,11 +31,11 @@ public class ValidacoesStringTests
 
         //TODO: Corrigir a chamada do método "ContemCaractere" da seção Act
         // Act
-         _validacoes.ContemCaractere(texto, textoProcurado);
+        var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
         //TODO: Corrigir o Assert.True com base no retorno da chamada ao método
-        Assert.True(true);
+        Assert.True(true, resultado);
     }
 
     [Fact]
@@ -50,7 +50,7 @@ public class ValidacoesStringTests
 
         // Assert
         //TODO: Corrigir o Assert.False com base no retorno da chamada ao método
-        Assert.False(true);
+        Assert.False(true, resultado);
     }
 
     //TODO: Corrigir a anotação [Fact]
@@ -66,6 +66,6 @@ public class ValidacoesStringTests
         var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
 
         // Assert
-        Assert.True(resultado);
+        Assert.True(true, resultado);
     }
 }
